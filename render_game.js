@@ -32,3 +32,4 @@ textSize(14);
 textAlign(CENTER);
 text("Player 1: A (Red), S (Yellow), D(Blue)", width / 2, height -40);
 text("Player 2: J (Red), L (Yellow) L (Blue)", width / 2, height -20);
+}

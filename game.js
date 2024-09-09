@@ -10,7 +10,7 @@ for (let i = 0; i < 15; i++) {
 }
 }
 
-fuction randomColor() {
+function randomColor() {
     let colors = ['red', 'yellow', 'blue'];
     return random(colors);
 }
