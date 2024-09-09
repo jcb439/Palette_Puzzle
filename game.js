@@ -1,5 +1,5 @@
 function setup() {
-    createCanvas (600,200); // Adjust the size as needed
+    createCanvas (600,120); // Adjust the size as needed
 //Generate random colors for Player 1
 for (let i=0; i < 15; i++){
     player1Colors.push(randomColor());

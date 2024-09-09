@@ -13,4 +13,3 @@ function resetPlayer1() {
       player2Colors.push(randomColor());
     }
   }
-  
