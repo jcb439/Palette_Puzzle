@@ -1,6 +1,4 @@
 function draw(){
-    background (220); //Light gray background
-
     //Draw Player 1's pixels
     for (let i=0; i<15; i++) {
         fill(player1Colors[i]);
@@ -27,9 +25,12 @@ for (let i=15; i < 30; i++) {
 
 //Display Instructions
 fill (0);
-noStroke();
-textSize(14);
 textAlign(CENTER);
-text("Player 1: A (Red), S (Yellow), D(Blue)", width / 2, height -40);
-text("Player 2: J (Red), L (Yellow) L (Blue)", width / 2, height -20);
+
+//draw a black line in the center to separate boards by player
+stroke(0);
+strokeWeight(2);
+line(width / 2, 0, width / 2, 20);
+align(center);
+
 }
