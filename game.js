@@ -33,7 +33,7 @@ function handleLevel2KeyPress(player) {
     colors = player1Colors;
     keys = ['a', 's', 'd'];  // Keys for Player 1
   } else if (player === 'player2') {
-    currentPosition = player2Position - 15;  // Adjust position for Player 2's side
+    currentPosition = player2Position;  // Adjust position for Player 2's side
     colors = player2Colors;
     keys = ['j', 'k', 'l'];  // Keys for Player 2
   }
@@ -72,12 +72,14 @@ function handleLevel2KeyPress(player) {
   if (player === 'player1') {
     player1Position = currentPosition;
   } else if (player === 'player2') {
-    player2Position = currentPosition + 15;  // Adjust back for Player 2
+    player2Position = currentPosition;  // Adjust back for Player 2
   }
 
   // Check if the player has finished level 2
   if (currentPosition >= 14) {
     alert(player === 'player1' ? "Player 1 wins level 2!" : "Player 2 wins level 2!");
-    resetPlayer1(1);  // Reset for the next round
+    resetPlayer1(1);  // Reset for the next round (player 1)
+  } else {
+    resetPlayer2(1); // reset player 2 for next round
   }
 }
