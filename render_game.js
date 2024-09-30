@@ -6,7 +6,7 @@ function draw() {
   // Draw Player 1's pixels (moving right towards the center)
   for (let i = 0; i < 15; i++) {
     if (i == player1Position && flash) {
-      fill(255);  // White flashing
+      fill(0, 255, 255); // White flashing
       noStroke();  // No outline
     } else {
       fill(player1Colors[i]);  // Normal color
@@ -18,7 +18,7 @@ function draw() {
   // Draw Player 2's pixels (moving left towards the center)
   for (let i = 15; i < 30; i++) {
     if (i == player2Position && flash) {
-      fill(255);  // White flashing
+      fill(0, 255, 255); // White flashing
       noStroke();  // No outline
     } else {
       fill(player2Colors[i - 15]);  // Corrected color array access
